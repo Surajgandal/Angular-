@@ -11,12 +11,12 @@
   <div class="upper-data">
      <img src="../assets/hot.jpg" alt=""  *ngIf="weatherData.temp>15"> 
      <img src="../assets/cold.jpg" alt=""  *ngIf="weatherData.temp<=15"> 
-     <img src="../assets/rain.jpg" alt=""  *ngIf="weatherData.humidity>=96"> 
-     <img src="../assets/cloud.jpg" alt=""  *ngIf="weatherData.humidity>80 && weatherData.humidity<96 "> 
+     <img src="../assets/rain.jpg" alt=""  *ngIf="weatherData.humidity>=94"> 
+     <img src="../assets/cloud.jpg" alt=""  *ngIf="weatherData.humidity>80 && weatherData.humidity<94 "> 
      <!-- <img src="../assets/cloud.jpg" alt=""  *ngIf="weatherData.humidity>80">  -->
 
     <div class="weather-data">
-      <!-- <div class="location" *ngIf="city">{{city.cityName}}</div> -->
+      <div class="location" style="font-size: 2em; font-weight: bold;">{{cityName}}</div>
       <div class="temperature">{{weatherData.temp | number:'1.0-0'}}°C</div>
     </div>
     
